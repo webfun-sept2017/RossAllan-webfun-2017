@@ -20,6 +20,7 @@
  background-color: blue;
  margin: 10px;
  display:inline-block;
+ vertical-align: top;
 }
 #main_content{
  height: 400px;
