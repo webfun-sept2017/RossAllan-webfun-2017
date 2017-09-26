@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Functions of jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#hide").click(function(){$("#hide").hide("")});
+      $("#show").click(function(){$("#hidden").show("")});
+      $("#toggle").click(function(){$("#toggletar").toggle("")});
+      $("#slideDown").click(function(){$("#slideUp").slideDown("")});
+      $("#slideUp").click(function(){$("#slideUp").slideUp("")});
+      $("#slideToggle1, #slideToggle2").click(function(){
+        $("#elevator").slideToggle("");
+        $("#slideToggle1").slideToggle("");
+        $("#slideToggle2").slideToggle("");
+      });
+      $("#fadeIn").click(function(){$("#kirk").fadeIn("")});
+      $("#fadeOut").click(function(){$("#fadeOut").fadeOut("")});
+      $("#addClass").click(function(){$("#annoying").addClass("terriblecolor")});
+      $("#inserts").click(function(){
+        $("#inserts").before("<h3>Oh no, I stepped on a butterfly...</h3>");
+        $("#inserts").after("<h3>Oh no, I stepped on a butterfly...</h3>");
+      });
+      $("#append").click(function(){$("#append").append(" <h3>something.</h3>")});
+      $("#html").click(function(){$("#html").html("<h3>That's better!</h3>")});
+      $("#attr").click(function(){$("#attr").attr("height","100px")});
+      $("#val").click(function(){$("#val").val("no")});
+      $("#text").click(function(){$("#text").text("Well that seems rather redundant.")});
+      $("#data").click(function(){
+        $("#data").data("farewell","So sad to see you go!");
+        alert($("#data").data("farewell"));
+      });
+    });
+  </script>
+</head>
+</body>
+  <div class="testbox"> <!--hide-->
+    <h2>Hide</h2>
+    <h3 id="hide">I'm shy! (please don't click me)</h3>
+  </div>
+  <div class="testbox"> <!--show-->
+    <h2>Show</h2>
+    <h3 id="show">There's something hidden here...</h3>
+    <h3 id="hidden">You found me!</h3>
+  </div>
+  <div class="testbox"> <!--toggle-->
+    <h2 id="toggletar">Toggle</h2>
+    <h3 id="toggle">Wanna see a magic trick?</h3>
+  </div>
+  <div id="elevator" class="testbox"> <!--slideDown/slideUp-->
+    <h2>Elevator</h2>
+    <h3 id="slideDown">Going down?</h3>
+    <h3 id="slideUp">You missed my floor.</h3>
+  </div>
+  <div class="testbox"> <!--slideToggle-->
+    <h2>Maintenance</h2>
+    <h3 id="slideToggle1">The elevator might need to be closed for service...</h3>
+    <h3 id="slideToggle2">I think it's working again.</h3>
+  </div>
+  <div class="testbox"> <!--fadeIn-->
+    <h2>Scotty</h2>
+    <h3 id="fadeIn">Beaming you up, Captain</h3>
+    <img id="kirk" src="JamesTKirk.jpg" alt="Kirk">
+  </div>
+  <div class="testbox"> <!--fadeOut-->
+    <h2>Quantum Leap</h2>
+    <h3 id="fadeOut">I hope the next leap is home...</h3>
+  </div>
+  <div id="annoying" class="testbox"> <!--addClass-->
+    <h2>Chrome and Chromer</h2>
+    <h3 id="addClass">Wanna see the most annoying color in the world?</h3>
+  </div>
+  <div class="testbox"> <!--before/ after-->
+    <h2>Paradox</h2>
+    <h3 id="inserts">Oh no, I stepped on a butterfly...</h3>
+  </div>
+  <div class="testbox"> <!--append-->
+    <h2>Tacking On</h2>
+    <h3 id="append">I think this is missing</h3>
+  </div>
+  <div class="testbox"> <!--html-->
+    <h2>Changed my Mind</h2>
+    <h3 id="html">I actually don't want this here.</h3>
+  </div>
+  <div class="testbox"> <!--attr-->
+    <h2>Not Big Enough</h2>
+    <img id="attr" src="emhance.png" alt="emhance" height="50px">
+  </div>
+  <div class="testbox"> <!--val-->
+    <h2>Tricked</h2>
+    <button type="button" id="val" value="yes">Click me to say yes!</button>
+  </div>
+  <div class="testbox"> <!--text-->
+    <h2>What does this one do?</h2>
+    <h3 id="text">Click me so I can find out already!</h3>
+  </div>
+  <div class="testbox"> <!--data-->
+    <h2>A Farewell</h2>
+    <button type="button" id="data">Goodbye!</button>
+  </div>
+</body>

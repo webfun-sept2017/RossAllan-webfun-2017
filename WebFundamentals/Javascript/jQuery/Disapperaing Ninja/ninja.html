@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Ninjas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".ninja").click(function(){$(this).hide("")});
+      $("#restore").click(function(){$(".ninja").show("")});
+    });
+  </script>
+</head>
+<body>
+  <img class="ninja" src="images/archimonde.jpg" alt="archimonde">
+  <img class="ninja" src="images/arthas.png" alt="arthas">
+  <img class="ninja" src="images/c'thun.jpg" alt="c'thun">
+  <img class="ninja" src="images/deathwing.jpeg" alt="deathwing">
+  <img class="ninja" src="images/Illidan-Thumbnail.png" alt="illidan">
+  <img class="ninja" src="images/kaelthas.png" alt="kael'thas">
+  <img class="ninja" src="images/medivh.jpg" alt="medivh">
+  <img class="ninja" src="images/ragnaros.jpg" alt="ragnaros">
+  <button id="restore" type="button">Raid Reset</button>
+</body>

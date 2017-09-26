@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.testbox{
+  width:500px;
+  height: 150px;
+  border-bottom: 4px solid silver;
+  text-align: center;
+}
+
+h3{
+  display: inline-block;
+}
+
+#hidden{
+  display: none;
+}
+
+#slideUp{
+  display: none;
+}
+
+#slideToggle2{
+  display: none;
+}
+
+#kirk{
+  display: none;
+  max-height: 65%;
+}
+
+.terriblecolor{
+  background-color: #85ff00;
+}

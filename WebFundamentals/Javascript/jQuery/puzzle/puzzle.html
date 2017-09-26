@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".piece").click(function(){
+        var charRand = Math.floor(Math.random()*2);
+        if (charRand == 0){
+          var char = 'arthas';
+        }else{
+          var char = 'lk';
+        };
+        $(this).attr("src","images/"+char+(Math.floor(Math.random()*5)+1)+".png");
+      });
+    });
+  </script>
+</head>
+<body>
+  <img class="piece" src="images/arthas1.png" alt="piece1">
+  <img class="piece" src="images/arthas2.png" alt="piece2">
+  <img class="piece" src="images/arthas3.png" alt="piece3">
+  <img class="piece" src="images/arthas4.png" alt="piece4">
+  <img class="piece" src="images/arthas5.png" alt="piece5">
+</body>

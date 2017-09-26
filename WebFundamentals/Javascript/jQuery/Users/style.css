@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+table{
+
+}
+
+th{
+  width: 25%;
+  margin: auto;
+}
+
+td{
+  display: inline-block;
+  border-right: 1px solid black;
+  max-width: 25%;
+  word-wrap: break-word;
+}
+
+tr{
+  display: block;
+  width:600px;
+}
+
+#header{
+  border: 2px solid black;
+}
+
+#newuser{
+  margin: 20px 0;
+}
+
+h2{
+  border-bottom: 3px solid silver;
+  margin-bottom: 10px;
+  width: 150px;
+}

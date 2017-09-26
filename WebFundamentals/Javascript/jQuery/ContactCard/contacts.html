@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Card</title>
+   <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script>
+     $(document).on("click", ".card",function(){
+      $(this).children().toggle();
+     });
+     $(document).ready(function(){
+      $("button").click(function(){
+        if ($("#first").val()==""||$("#last").val()==""||$("#desc").val()=="Description"){
+          alert("Please complete the Form.");
+        }else{
+          $("#cards").append('<div class="card">\
+            <h3 class="name">'+$("#first").val()+' '+$("#last").val()+'</h3>\
+            <h4 class="clickme">Click Me to See Description!</h4>\
+            <p class="description">'+$("#desc").val()+'</p>\
+          </div>');
+        };
+      });
+     });
+   </script>
+</head>
+<body>
+  <form>
+    <label for="first">First Name:</label>
+    <input type="text" name="first" id="first"><br>
+    <label for="last">Last Name:</label>
+    <input type="text" name="last" id="last"><br>
+    <textarea id="desc">Description</textarea>
+    <button type="button">Create Card</button>
+  </form>
+  <div id="cards"></div>
+</body>
