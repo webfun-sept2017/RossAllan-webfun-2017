@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather by City</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("form").submit(function(){
+          var city = $("#city").val();
+          $.get('https://api.openweathermap.org/data/2.5/weather?q='+city+'&&appid=218015852494ed494471cba6b3228571', function(citydata){
+            var tempr= "";
+            tempr += "<h2>"+city+"</h2>";
+            tempr += "Temperature: "+Math.trunc((citydata.main["temp"])*(9/5)-459.67)+"&degF";
+            $("#display").html(tempr)
+          }, 'json');
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="city" id="city">
+      <input type="submit" value="Search Weather">
+    </form>
+    <div id="display"></div>
+  </body>
+</html>
