@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  height: 256px;
+  width: 256px;
+}
+#about{
+  border: 2px solid black;
+  width: 750px;
+  margin: 20px 150px;;
+}
+
+#about h3{
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+  background-color: white;
+  width:55px;
+}
+
+p{
+  font-size: 16pt;
+}
